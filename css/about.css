@@ -1,0 +1,148 @@
+/* code that is here, until the first @media block, will apply to any screen size */
+#somethingorother {
+  width: 800px ;
+}
+
+@media screen and (max-width: 320px) {
+  /* comes into effect for screens less than or equal to 320 pixels */
+  #somethingorother {
+    width: 120px ;
+  }
+}
+@media screen and (min-width: 321px) and (max-width: 480px) {
+  /* comes into effect for screens between 321 and 480 pixels (inclusive) */
+  #somethingorother {
+    width: 320px ;
+  }
+}
+@media screen and (min-width: 481px) {
+  /* comes into effect for screens larger than or equal to 481 pixels */
+  #somethingorother {
+    width: 480px ;
+  }
+}
+
+/* code that is here will apply to any screen size */
+
+
+body {
+    padding-top: 60px;
+    text-align: center;
+}
+
+.navbar-inverse{
+  background: #282827;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+  color: white;
+}
+
+.menu {
+  transition: 0.4s;
+  padding: 0 10px;
+}
+
+.menu:hover {
+  background-color: #ffee00;
+}
+
+.btn-normal {
+	color: #3c03b7;
+	background: #f9f509;
+	border: none;
+}
+
+.btn-normal:hover {
+	background-color: #c3b8f9;
+	border: none;
+}
+
+.envelope:hover {
+  color: #f9f509;
+}
+
+.navbar-brand {
+  padding: 0px;
+}
+
+.navbar-brand>img {
+  height: 100%;
+  width: auto;
+  padding-left: 20px;
+  padding-right: 15px;
+}
+
+.navbar {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.about {
+    text-align: left;
+    font-size: 1.9rem;
+    line-height: 1.5;
+    word-spacing: normal;
+    padding-left: 90px;
+    padding-right: 90px;
+}
+
+h3 {
+    font-family: Cabin;
+}
+
+h5{
+   font-family: Cabin;
+   font-size: 1.2rem;
+}
+
+.social2 {
+  max-width: 100%;
+}
+
+.footer {
+   width: 100%;
+   background-color: #00420b;
+   color: white;
+   text-align: center;
+   padding-top: 20px;
+   padding-bottom: 20px;
+}
+
+.row {
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    border: 1px  solid #d4efc9;
+}
+
+.header {
+  padding-top: -2px; }
+
+#shadowtwo{
+	box-shadow: rgb(109, 110, 112) 6px 6px 8px;
+}
+
+.style-two {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+    width: 80%;
+}
+
+/* Grow */
+.hvr-grow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
